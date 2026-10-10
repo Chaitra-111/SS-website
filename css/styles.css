@@ -396,7 +396,10 @@ h1, h2, h3, h4 { font-family: var(--f-head); line-height: 1.1; letter-spacing: -
   .services__tabs { grid-template-columns: 1fr 1fr; }
   .svc-tab { padding: .7rem; gap: .55rem; font-size: .85rem; }
   .svc-tab [data-lucide] { width: 32px; height: 32px; padding: 7px; }
-  .team-wall { flex-direction: column; text-align: center; }
+  .team-wall { flex-direction: column; text-align: center; gap: 1.2rem; }
+  .team-wall__count { flex-direction: column; gap: 0.2rem; }
+  .team-wall__count strong { font-size: 2.4rem; }
+  .team-wall__count span { font-size: .85rem; }
   .join__actions { width: 100%; min-width: 0; }
   .footer__inner { grid-template-columns: 1fr; }
 }
