@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Struggle of Students (SS) — Built by students, for students</title>
+  <meta name="description" content="SS — Struggle of Students is a student community offering internships, jobs, events, volunteering, workshops, placements and guidance. Built by students, for students." />
+  <meta name="theme-color" content="#4338CA" />
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#top" class="brand" id="nav-logo" aria-label="SS home">
+        <img src="assets/logo.svg" alt="SS logo" class="brand__mark" />
+        <span class="brand__text">Struggle of <b>Students</b></span>
+      </a>
+      <nav class="nav__links" id="nav-links" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#opportunities">Opportunities</a>
+        <a href="#events">Events</a>
+        <a href="#sessions">Sessions</a>
+        <a href="#services">Services</a>
+        <a href="#placements">Placements</a>
+        <a href="#team">Team</a>
+      </nav>
+      <div class="nav__cta">
+        <a href="#" class="btn btn--primary btn--sm js-join" id="nav-join-btn" target="_blank" rel="noopener">Join Community</a>
+        <button class="nav__toggle" id="nav-toggle" aria-label="Open menu"><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="hero__bg" aria-hidden="true"><span class="blob blob--1"></span><span class="blob blob--2"></span><span class="grid-dots"></span></div>
+      <div class="container hero__inner">
+        <div class="hero__copy reveal">
+          <span class="pill"><span class="pill__dot"></span>A platform built by students, for students</span>
+          <h1>No student should <span class="hl">struggle</span> alone.</h1>
+          <p class="hero__lead">SS connects students to <b>internships, jobs, events, mentors</b> and a community that actually shows up. Join thousands of students turning struggles into opportunities.</p>
+          <div class="hero__actions">
+            <a href="#" class="btn btn--primary btn--lg js-join" id="hero-join-btn" target="_blank" rel="noopener">
+              Join SS Community <i data-lucide="arrow-up-right"></i>
+            </a>
+            <a href="#" class="btn btn--whatsapp btn--lg js-whatsapp" id="hero-whatsapp-btn" target="_blank" rel="noopener">
+              <i data-lucide="message-circle"></i> WhatsApp Community
+            </a>
+          </div>
+          <ul class="hero__stats">
+            <li><strong data-count="communityMembers">0</strong><span>Community members</span></li>
+            <li><strong data-count="eventsConducted">0</strong><span>Events conducted</span></li>
+            <li><strong data-count="studentsPlaced">0</strong><span>Students placed</span></li>
+          </ul>
+        </div>
+        <div class="hero__art reveal">
+          <div class="hero__img-wrap">
+            <img src="assets/hero.jpg" alt="Students collaborating — music, tech, events and careers" />
+          </div>
+          <div class="float-card float-card--a"><i data-lucide="briefcase"></i><div><b>New internship</b><small>3 roles open</small></div></div>
+          <div class="float-card float-card--b"><i data-lucide="users"></i><div><b data-count="activeTeamMembers">0</b><small>active team members</small></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ UPDATES TICKER ============ -->
+    <div class="ticker" aria-label="Latest updates">
+      <span class="ticker__label"><i data-lucide="zap"></i> Latest</span>
+      <div class="ticker__track"><div class="ticker__items" id="ticker-items"></div></div>
+    </div>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Who we are</span>
+          <h2>A student community that turns <span class="hl">struggles</span> into stepping stones.</h2>
+          <p>SS started with a simple idea: every student deserves guidance, opportunities and a crew that has their back. Today we run events, a band, an IT studio, a careers desk and a support network — all powered by students.</p>
+        </div>
+        <div class="journey reveal">
+          <div class="journey__step"><span>01</span><b>Who we are</b><small>Students helping students</small></div>
+          <div class="journey__step"><span>02</span><b>What we do</b><small>Events, services &amp; support</small></div>
+          <div class="journey__step"><span>03</span><b>Opportunities</b><small>Internships, jobs, roles</small></div>
+          <div class="journey__step"><span>04</span><b>Join</b><small>One form, two minutes</small></div>
+          <div class="journey__step"><span>05</span><b>Participate</b><small>Volunteer, attend, lead</small></div>
+          <div class="journey__step"><span>06</span><b>Reach us</b><small>Talk to the right person</small></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ OPPORTUNITIES ============ -->
+    <section class="section section--tint" id="opportunities">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Opportunities</span>
+          <h2>What can <span class="hl">you</span> get through SS?</h2>
+          <p>Pick what excites you. Every opportunity starts with joining the community.</p>
+        </div>
+        <div class="chips reveal" id="opp-filters" role="tablist">
+          <button class="chip is-active" data-filter="all" id="filter-all">All</button>
+          <button class="chip" data-filter="Career" id="filter-career">Career</button>
+          <button class="chip" data-filter="Leadership" id="filter-leadership">Leadership</button>
+          <button class="chip" data-filter="Community" id="filter-community">Community</button>
+          <button class="chip" data-filter="Growth" id="filter-growth">Growth</button>
+        </div>
+        <div class="opp-grid" id="opp-grid"></div>
+      </div>
+    </section>
+
+    <!-- ============ EVENTS ============ -->
+    <section class="section" id="events">
+      <div class="container">
+        <div class="section__head section__head--row reveal">
+          <div>
+            <span class="eyebrow">Upcoming events</span>
+            <h2>Show up. Volunteer. <span class="hl">Belong.</span></h2>
+          </div>
+          <p>Volunteer slots are limited per event. When they're gone, they're gone.</p>
+        </div>
+        <div class="events-grid" id="events-grid"></div>
+      </div>
+    </section>
+
+    <!-- ============ SESSIONS ============ -->
+    <section class="section section--dark" id="sessions">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow eyebrow--light">Online sessions</span>
+          <h2>Learn live, from anywhere.</h2>
+          <p>Register for limited-seat Zoom &amp; Meet sessions. Meeting links unlock here shortly before each session starts.</p>
+        </div>
+        <div class="sessions-grid" id="sessions-grid"></div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Our services</span>
+          <h2>How SS can <span class="hl">help</span> you.</h2>
+          <p>For students and organisations — here's what we offer and exactly who to reach.</p>
+        </div>
+        <div class="services reveal">
+          <div class="services__tabs" id="services-tabs" role="tablist"></div>
+          <div class="services__panel" id="services-panel" role="tabpanel"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PLACEMENTS ============ -->
+    <section class="section section--tint" id="placements">
+      <div class="container">
+        <div class="section__head section__head--row reveal">
+          <div>
+            <span class="eyebrow">Student placements</span>
+            <h2><span class="hl" data-count="studentsPlaced">0</span>+ students placed.</h2>
+          </div>
+          <p>Real students. Real offers. Every number here is someone who didn't have to struggle alone.</p>
+        </div>
+        <div class="place-grid" id="place-grid"></div>
+      </div>
+    </section>
+
+    <!-- ============ TEAM ============ -->
+    <section class="section" id="team">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Founder &amp; leadership</span>
+          <h2>The people behind <span class="hl">SS</span>.</h2>
+        </div>
+        <div class="lead-grid" id="lead-grid"></div>
+
+        <div class="team-wall reveal">
+          <div class="team-wall__count">
+            <strong data-count="activeTeamMembers">0</strong>
+            <span>active team members<br/>keeping SS alive</span>
+          </div>
+          <div class="team-wall__faces" id="team-faces"></div>
+          <a href="#" class="btn btn--ghost js-join" id="team-join-btn" target="_blank" rel="noopener">Become a member <i data-lucide="arrow-right"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ JOIN CTA ============ -->
+    <section class="section" id="join">
+      <div class="container">
+        <div class="join reveal">
+          <div class="join__copy">
+            <img src="assets/logo.svg" alt="" class="join__logo" />
+            <h2>Ready to stop struggling alone?</h2>
+            <p>Three steps. Two minutes. A whole community.</p>
+            <ol class="join__steps">
+              <li><span>1</span>Fill the SS community form</li>
+              <li><span>2</span>Join our WhatsApp community</li>
+              <li><span>3</span>Pick an event, role or opportunity</li>
+            </ol>
+          </div>
+          <div class="join__actions">
+            <a href="#" class="btn btn--lime btn--lg js-join" id="cta-join-btn" target="_blank" rel="noopener">Fill the Join Form <i data-lucide="arrow-up-right"></i></a>
+            <a href="#" class="btn btn--outline-light btn--lg js-whatsapp" id="cta-whatsapp-btn" target="_blank" rel="noopener"><i data-lucide="message-circle"></i> Join WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer" id="contact">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#top" class="brand"><img src="assets/logo.svg" alt="SS logo" class="brand__mark" /><span class="brand__text">Struggle of <b>Students</b></span></a>
+        <p>A platform built by students, for students.</p>
+        <div class="socials" id="socials"></div>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <a href="#opportunities">Opportunities</a><a href="#events">Events</a><a href="#sessions">Sessions</a><a href="#services">Services</a>
+      </div>
+      <div>
+        <h4>Get involved</h4>
+        <a href="#" class="js-join" target="_blank" rel="noopener">Join community</a><a href="#events">Volunteer</a><a href="#" class="js-whatsapp" target="_blank" rel="noopener">WhatsApp</a><a href="#team">Team</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="#" id="footer-email"></a><a href="#" id="footer-phone"></a>
+      </div>
+    </div>
+    <div class="container footer__bottom"><span>© <span id="year"></span> SS — Struggle of Students</span><span>Made with ❤ by the SS team</span></div>
+  </footer>
+
+  <!-- ============ EVENT MODAL ============ -->
+  <div class="modal" id="event-modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__card" id="event-modal-body"></div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
