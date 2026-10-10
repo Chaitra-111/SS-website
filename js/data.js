@@ -17,11 +17,11 @@
 const LINKS = {
   // Main "Join Community" Google Form
   joinForm: "https://docs.google.com/forms/d/e/1FAIpQLScWd114wZr3yY0SJ7VRFrPycdUs-zvYblfyZBd9cana24GZMA/viewform",
-  // Paste your WhatsApp community invite link here (https://chat.whatsapp.com/...)
-  whatsapp: "",
-  instagram: "",
-  linkedin: "",
-  youtube: "",
+  whatsapp: "https://whatsapp.com/channel/0029VbDGVdIJpe8hBlo7jK44",
+  whatsappGroup: "https://chat.whatsapp.com/I9OSqm30mAM5wEnUhDN17Y",
+  instagram: "https://www.instagram.com/struggle.of.student?stkn=MWpjOXNmNG5kZmdmNg==",
+  twitter: "https://x.com/Struggleofstdnt",
+  youtube: "https://m.youtube.com/%40struggleofstudents-o30?si=hhQWZQV8CW3QmNvI&fbclid=PAb21jcAUpiaRleHRuA2FlbQIxMQBwZG9mAnNydGMGYXBwX2lkDzU2NzA2NzM0MzM1MjQyNwABpwoLuDDd43nbKDfUlg6kycar_AHeuw2Yf7uM5RwQ3BinQd7ERyZ1q5rBf88-_aem_X4BB4KehHVXYKoD0iURC9Q",
   email: "hello@strugglesofstudents.in",
   phone: "+91 90000 00000",
   // General enquiry form (can be the same Google Form or a separate one)
